@@ -1,0 +1,334 @@
+/* BASE */
+html{
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--family_Saira);
+}
+
+:root {
+  /* third_base_style */
+  --primary: #2a7f9e;
+  --secondary: #8da9bd;
+  --headers: #1c2b2d;
+  --light: #fff;
+  --header_text: #343a40;
+  --muted_text: #6c757d;
+  --primary_text: #2895bd;
+  --border_bottom: #1f6e8b1c;
+  --social_color: #495057;
+  --box-shadow: 4px 1px 29px -2px rgba(0, 0, 0, 0.53);
+  --font_700: 700;
+  --font_500: 500;
+  --font_600: 600;
+  --font_400: 400;
+  --family_Saira: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --family_Muli: "Mulish", sans-serif;
+  /* second_style */
+  --primary_second: #cd5d7d;
+  --secondary_second: #e0b2c0;
+  /* first_style */
+  --primary_third: #ffd571;
+  --secondary_third: #ffd571;
+}
+
+section {
+  min-height: 100vh;
+  padding-left: 20rem;
+  padding-right: 3.2rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font_700);
+  color: var(--header_text);
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-weight: var(--font_500);
+  color: var(--muted_text);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--muted_text);
+  font-size: 1.45rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+  color: var(--muted_text);
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+}
+a {
+  color: var(--header_text);
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--header_text);
+}
+
+/* text and social link colors */
+
+.primary_text {
+  color: var(--primary_text);
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  width: 270px;
+}
+
+.navbar {
+  height: 100vh;
+  width: 100%;
+  transition: background-color ease 0.3s;
+  background-color: var(--primary);
+  box-shadow: var(--box-shadow);
+  padding: 0;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+}
+
+.navbar-brand img {
+  width: 140px;
+  border-radius: 50%;
+  border: 5px solid var(--secondary);
+}
+.profil_img_mobile{
+  display: none;
+}
+
+.aside_nav {
+  height: 60vh;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  font-family: var(--family_Saira) !important;
+  font-weight: var(--font_700) !important;
+}
+
+/* MAIN */
+
+/* ABOUT */
+
+h1 span,
+h4 span a {
+  color: var(--primary_text);
+}
+
+.social_links .fab {
+  border-radius: 50%;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.social_links .fab:hover {
+  color: var(--headers);
+}
+
+/* experience */
+
+.experience_box {
+  margin-bottom: 3rem;
+  position: relative;
+  border-bottom: 0.1px solid var(--border_bottom);
+}
+.border_none {
+  border: none;
+}
+
+.experience_box span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--primary_text);
+  font-size: 1.2rem;
+}
+
+.experience_box p {
+  font-family: var(--family_Muli);
+  font-size: 1rem;
+  font-weight: var(--font_400);
+}
+
+/* skills */
+
+.languages {
+  color: var(--muted_text);
+}
+
+.fab {
+  margin-right: 1.5rem;
+  color: var(--primary_text);
+}
+
+/* awards */
+
+.fa-trophy,
+.fa-check {
+  color: var(--primary_text);
+  margin-right: 0.4rem;
+}
+
+/* THEMES */
+
+.themes {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: 1px solid #eee;
+  padding: 10px 10px 4px 10px;
+  border-radius: 20px;
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  transition: border ease 0.4s;
+}
+.themes:hover {
+  border: 1px solid rgba(0, 0, 0, 0.384);
+}
+
+.themes button {
+  width: 30px;
+  height: 30px;
+  margin: 0 3px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+
+.first_button {
+  background-color: var(--primary);
+}
+.first_button:hover {
+  opacity: 0.9;
+}
+
+.second_button {
+  background-color: var(--primary_second);
+}
+.second_button:hover {
+  opacity: 0.9;
+}
+
+.third_button {
+  background-color: var(--primary_third);
+}
+.third_button:hover {
+  background-color: var(--primary_third);
+}
+
+@media (max-width: 992px) {
+html{
+  font-size: 0.9rem;
+}
+
+  header {
+    width: 100%;
+    height: 4rem;
+    z-index: 100;
+  }
+  .navbar {
+    height: 4rem;
+  }
+  .navbar div{
+   flex-direction: row !important;
+   align-items: center;
+  }
+
+  .aside_nav {
+    flex-direction: row;
+    height: 4em;
+  }
+  ul {
+    flex-direction: row;
+  }
+
+  #profil_img {
+   display: none; 
+  }
+  .navbar-toggler {
+    position: relative;
+    right: 10px;
+    transition: ease 0.3s background-color;
+  }
+  .navbar-toggler:hover {
+    background-color: #eee;
+  }
+  section{
+    padding: 0 10%;
+    align-items: center;
+  }
+  p, h1, h4, h2, h3{
+    text-align: center;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .experience_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .languages{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .themes {
+    top: 80px;
+    right: 10px;
+  }
+  .themes button {
+    width: 20px;
+    height: 20px;
+    margin: 0 1.5px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+  }
+  .profil_img_mobile{
+    display: block;
+    width: 140px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary);
+  }
+
+  .experience_box span{
+    font-size: 0.9rem;
+  }
+}
