@@ -1,2 +1,0 @@
-gitignore.txt
-index2.html
